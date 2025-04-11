@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Excel to SQL</title>
+</head>
+<body>
+    <h2>Upload Excel File</h2>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file" accept=".xlsx,.xlsm" required>
+        <button type="submit">Convert to SQL</button>
+    </form>
+</body>
+</html>
